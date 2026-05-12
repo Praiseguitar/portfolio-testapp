@@ -1,0 +1,279 @@
+.services {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.service-header {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.service-title {
+    font-size: 32px;
+}
+
+.service-header h4 {
+    font-size: 15px;
+}
+
+.service-body {
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+
+}
+
+.service-content-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    min-height: 45vh;
+}
+
+/* .service-content-container div{
+    border: 1px solid;
+} */
+
+.service-appdev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease-out;
+}
+
+.service-appdev:hover {
+    transform: translateY(-10px);
+}
+
+.service-appdev i {
+    font-size: 60px;
+    color: rgb(0, 0, 146);
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(198, 179, 216);
+    margin-top: 5px;
+}
+
+.service-appdev h2 {
+    font-size: 23px;
+    text-align: center;
+}
+
+.service-appdev p {
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+
+
+.service-graphics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease-out;
+}
+
+.service-graphics:hover {
+    transform: translateY(-10px);
+}
+
+.service-graphics i {
+    font-size: 55px;
+    color: rgb(0, 0, 146);
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(198, 179, 216);
+    margin-top: 5px;
+}
+
+.service-graphics h2 {
+    /* margin-top: 20px; */
+    font-size: 23px;
+    text-align: center;
+}
+
+.service-graphics p {
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+
+
+
+.service-backend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease-out;
+}
+
+.service-backend:hover {
+    transform: translateY(-10px);
+}
+
+.service-backend i {
+    font-size: 55px;
+    color: rgb(0, 0, 146);
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(198, 179, 216);
+    margin-top: 5px;
+}
+
+.service-backend h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-backend p {
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+
+
+
+.service-database {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 0.5s ease-out;
+}
+
+.service-database:hover {
+    transform: translateY(-10px);
+}
+
+.service-database i {
+    font-size: 55px;
+    color: rgb(0, 0, 146);
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(198, 179, 216);
+    margin-top: 5px;
+}
+
+.service-database h2 {
+    /* margin-top: 20px; */
+    font-size: 23px;
+    text-align: center;
+}
+
+.service-database p {
+    font-size: 13px;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
+
+
+
+.service-fotter {
+    /* border: 1px solid; */
+    margin: auto;
+    margin-top: 70px;
+    width: 70%;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+}
+
+.rocket {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-fotter i {
+    font-size: 50px;
+    color: blue;
+}
+
+.rocket h5 {
+    font-size: 19px;
+}
+
+.rocket h5 span {
+    font-size: 12px;
+}
+
+.service-fotter button {
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 20%;
+    cursor: pointer;
+
+}
+
+.service-fotter button a {
+    text-decoration: none;
+    color: white;
+}
+
+.service-fotter button i {
+    font-size: 15px;
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    .service-fotter {
+        width: 100%;
+    }
+
+    .rocket {
+        gap: 15px;
+    }
+
+    .service-fotter i {
+        font-size: 20px;
+    }
+
+    .rocket h5 {
+        font-size: 12px;
+    }
+
+    .rocket h5 span {
+        font-size: 10px;
+    }
+
+    .service-fotter button {
+        padding: 10px;
+        min-width: 10%;
+
+    }
+}

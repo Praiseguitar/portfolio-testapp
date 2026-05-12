@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -------------dark mode styling------------- */
+body.dark-mode .about h1 span{
+    color: rgb(221, 216, 216);
+}
+body.dark-mode .aboutList li i {
+    color: rgb(127, 130, 133);
+}
+body.dark-mode .whatido::marker{
+    color: rgb(91, 202, 100);
+}
+body.dark-mode .project-done{
+    box-shadow: 0 10px 15px 3px rgba(19, 18, 18, 0.9);
+    /* background-color: rgb(44, 39, 39);    */
+}
+body.dark-mode .project-done h1{
+    color: rgb(241, 237, 237);
+}
+body.dark-mode .project-done h5{
+    color: rgb(185, 179, 179);
+}
+body.dark-mode .countries{
+    box-shadow: 0 10px 15px 4px rgba(19, 18, 18, 0.9);
+}
+
+body.dark-mode .countries h1 {
+    color: rgb(241, 237, 237);
+}
+
+body.dark-mode .countries h5 {
+    color: rgb(185, 179, 179);
+}
+body.dark-mode .happyClients{
+    box-shadow: 0 10px 15px 4px rgba(19, 18, 18, 0.9);
+}
+body.dark-mode .happyClients h1{
+    color: rgb(241, 237, 237);
+}
+body.dark-mode .happyClients h5{
+    color: rgb(185, 179, 179);
+}
+body.dark-mode .ideDesign {
+    height: 50vh;
+    background-color: #131212;
+    margin-top: 40px;
+}
+body.dark-mode .ideHeader{
+    background-color: #1f1d1d;
+    color: rgb(212, 206, 206);
+}
+body.dark-mode .ide-dot-design3{
+    background-color: #9ac404;
+}
+
+
+
+
+.about {
+    margin: auto;
+    width: 95%;
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+.about h1 span {
+    font-size: 17px;
+    position: relative;
+    bottom: 6px;
+    color: rgb(78, 72, 72);
+
+}
+
+.aboutSecContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.section1 {
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(158, 152, 152, 0.2);
+    border-radius: 5px;
+    /* border: 1px solid black;  */
+}
+
+.aboutList {
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.aboutList li {
+    margin-bottom: 20px;
+}
+
+.aboutList li i {
+    color: rgb(101, 101, 141);
+    margin-right: 5px;
+}
+
+.whatido {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+
+}
+
+.whoiam {
+    margin-top: 10px;
+}
+
+.section1 .whatidoTitie {
+    margin-top: 30px;
+}
+
+.whatido::marker {
+    color: rgb(48, 48, 105);
+    font-size: 25px;
+}
+
+.projectStat-container {
+    /* border: 2px solid green; */
+    height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.project-done {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(175, 166, 166, 0.7);
+    /* border: none; */
+}
+
+.project-done h1 {
+    color: rgb(49, 49, 189);
+    font-family: sans-serif;
+}
+
+.project-done h5 {
+    color: rgb(73, 62, 62);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.countries {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(175, 166, 166, 0.7);
+}
+
+.countries h1 {
+    color: rgb(49, 49, 189);
+    font-family: sans-serif;
+}
+
+.countries h5 {
+    color: rgb(73, 62, 62);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.happyClients {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(175, 166, 166, 0.7);
+}
+
+.happyClients h1 {
+    color: rgb(49, 49, 189);
+    font-family: sans-serif
+}
+
+.happyClients h5 {
+    color: rgb(73, 62, 62);
+    font-size: 12px;
+    font-family: sans-serif
+}
+
+/* ---------second section */
+
+.section2 {
+    padding: 30px;
+    box-shadow: 0 0 5px rgba(158, 152, 152, 0.2);
+    border-radius: 5px;
+}
+
+.ideDesign {
+    height: 50vh;
+    background-color: rgb(248, 240, 240);
+    margin-top: 40px;
+}
+
+.ideHeader {
+    background-color: rgb(238, 229, 229);
+    height: 7vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 82, 82);
+    font-size: 13px;
+}
+
+.dot-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.ide-dot-design1 {
+    background-color: rgb(183, 214, 45);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    /* border: 1px solid; */
+}
+
+.ide-dot-design2 {
+    background-color: rgb(103, 65, 165);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.ide-dot-design3 {
+    background-color: rgb(27, 27, 24);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+
+.ideBody {
+    padding: 25px;
+}
+
+.ideClass {
+    line-height: 1.8;
+    font-family: sans-serif;
+}
+
+.ideClass span {
+    color: blueviolet;
+}
+
+/* -------------------Tablet; modeeee================= */
+
+@media (min-width:768px) and (max-width: 1050px) {
+    .aboutList {
+        font-size: 13px;
+    }
+
+    .projectStat-container {
+        width: 92%;
+    }
+
+    .project-done h1 {
+        font-size: 25px;
+    }
+
+    .project-done h5 {
+        font-size: 10px;
+    }
+
+    .happyClients h1 {
+        font-size: 25px;
+    }
+
+    .happyClients h5 {
+        font-size: 10px;
+    }
+
+    .section2 {
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(158, 152, 152, 0.2);
+        border-radius: 5px;
+    }
+
+}
+
+/* ---------mobile view ---------- */
+
+@media (max-width: 767px) {
+    .aboutSecContainer {
+        display: flex;
+        /* grid-template-columns: 60% 40%; */
+        flex-direction: column-reverse;
+
+    }
+    .section1{
+        padding: 25px;
+    }
+    .aboutList {
+        font-size: 13px;
+    }
+
+    .projectStat-container {
+        width: 100%;
+    }
+
+    .project-done h1 {
+        font-size: 20px;
+    }
+
+    .project-done h5 {
+        font-size: 10px;
+    }
+
+    .happyClients h1 {
+        font-size: 22px;
+    }
+
+    .happyClients h5 {
+        font-size: 10px;
+    }
+
+    .countries h1 {
+        font-size: 23px;
+    }
+
+    .section2 {
+        padding: 20px;
+        box-shadow: 0 0 5px rgba(158, 152, 152, 0.2);
+        border-radius: 5px;
+    }
+
+    .ideDesign {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+}
