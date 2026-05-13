@@ -7,6 +7,9 @@
 body.dark-mode .mobile-apps{
     box-shadow: 0 0 15px rgba(17, 17, 17, 0.9);
 }
+body.dark-mode .mobileapps-langs h4{
+    box-shadow: 0 0 15px rgba(17, 17, 17, 0.6);
+}
 
 
 
@@ -24,7 +27,7 @@ body.dark-mode .mobile-apps{
 }
 .myProjectContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 370px), 1fr));
     gap: 30px;
     margin-top: 20px;
     padding: 5px;

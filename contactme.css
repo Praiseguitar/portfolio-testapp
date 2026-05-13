@@ -16,13 +16,14 @@ body.dark-mode #contactMe-form{
 
 .contact-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,350px), 1fr));
     padding: 10px;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
     margin-top: 80px;
     gap: 20px;
-    /* border: 2px solid; */
+    box-sizing: border-box;
 }
 
 
@@ -30,9 +31,11 @@ body.dark-mode #contactMe-form{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 0 5px rgba(192, 188, 188, 0.5);
     border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contactMe h4 {
@@ -44,6 +47,8 @@ body.dark-mode #contactMe-form{
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 700;
+    /* overflow-wrap: break-word;
+    word-break: break-word; */
 }
 
 .contactMe ul {
@@ -53,6 +58,11 @@ body.dark-mode #contactMe-form{
 .contactMe ul li {
     margin-top: 40px;
     font-weight: 600;
+}
+.contactMe ul .myemail{
+    overflow-wrap: wrap;
+    word-break:break-all;
+    /* font-size: 40px; */
 }
 
 .contactMe ul li i {
@@ -138,10 +148,10 @@ body.dark-mode #contactMe-form{
 
 
 @media (max-width: 767px) {
-    .contact-container {
+    /* .contact-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         width: 90%;
 
-    }
+    } */
 }

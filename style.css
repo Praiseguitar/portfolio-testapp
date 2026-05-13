@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-color: white;
     color: black;
     transition: background 0.3s ease;
@@ -12,60 +13,80 @@ body{
 
 
 /* ==============dark mode changes====== */
-body.dark-mode{
+body.dark-mode {
     background-color: #1a1a1a;
     color: #f0f0f0;
 }
-body.dark-mode header{
+
+body.dark-mode header {
     background-color: #1a1a1a;
     height: 90px;
 }
-body.dark-mode .nav-bar{
+
+body.dark-mode .nav-bar {
     height: 75px;
     /* border: 1px solid yellow; */
 }
-body.dark-mode .nav-bar div{
+
+body.dark-mode .nav-bar div {
     color: white;
 }
-body.dark-mode .nav-items{
+
+body.dark-mode .nav-items {
     background-color: #1a1a1a;
     color: white;
 }
-body.dark-mode .nav-items li{
+
+body.dark-mode .nav-items li {
     color: white;
 }
-body.dark-mode .name-title h6{
+
+body.dark-mode #downloadCvBtn {
+    border: none;
+    box-shadow: 0 0 15px rgba(43, 41, 41, 0.8);
+
+}
+
+body.dark-mode .name-title h6 {
     color: #f0f0f0;
 }
-body.dark-mode .name-title h6 span{
+
+body.dark-mode .name-title h6 span {
     color: #bcbe13;
 }
-body.dark-mode .what-i-doSec p{
+
+body.dark-mode .what-i-doSec p {
     color: #ece4e4;
 }
-body.dark-mode .what-i-doSec .divisor{
-    border-color: #f6fa05 ;
+
+body.dark-mode .what-i-doSec .divisor {
+    border-color: #f6fa05;
 }
-body.dark-mode .desktop-nav-items{
+
+body.dark-mode .desktop-nav-items {
     background-color: #1a1a1a;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
-body.dark-mode .desktop-nav-items li{
+
+body.dark-mode .desktop-nav-items li {
     color: rgb(253, 252, 252);
 }
-body.dark-mode .darkmode-switch i{
+
+body.dark-mode .darkmode-switch i {
     color: white;
 }
+
 body.dark-mode footer {
     background-color: #141212;
 }
 
 /* ------------handling routing----------------------------- */
 
-section{
+section {
     display: none;
 }
-section.active{
+
+section.active {
     display: block;
 }
 
@@ -78,13 +99,15 @@ header {
     top: 0;
     z-index: 1000;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.desktop-nav-items{
+
+.desktop-nav-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -97,11 +120,13 @@ header {
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.desktop-nav-items li{
+
+.desktop-nav-items li {
     color: blue;
     font-size: 20px;
     transition: font-size;
 }
+
 .desktop-nav-items li i {
     cursor: pointer;
     transition: transform 0.4s ease;
@@ -112,20 +137,22 @@ header {
 
 
 }
-.nav-icon.clickedIcon{
+
+.nav-icon.clickedIcon {
     font-size: 25px;
 }
 
-.nav-items{
-    display: none;
-}
-.hamburger{
+.nav-items {
     display: none;
 }
 
-.darkmode-switch i{
+.hamburger {
+    display: none;
+}
+
+.darkmode-switch i {
     font-size: 25px;
-    color: blue ;
+    color: blue;
     cursor: pointer;
 }
 
@@ -159,12 +186,14 @@ header {
 
 .socials {
     position: relative;
-    bottom: 26px;
+    bottom: 30px;
     height: auto;
     width: fit-content;
     margin: 0 auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+
 }
 
 .socials-container {
@@ -174,7 +203,7 @@ header {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 250px;
+    width: 240px;
     height: 60px;
     padding: 15px 30px;
     color: blue;
@@ -248,18 +277,24 @@ header {
 
 .projectsBtn {
     padding: 13px;
-    width: 120px;
+    width: 150px;
     background-color: blue;
     color: white;
     border: none;
     border-radius: 3px;
     font-size: 15px;
     cursor: pointer;
+    transition: transform 0.5s ease;
 
 }
 
+.projectsBtn:hover {
+    transform: scale(1.04);
+}
+
+
 .cvBtn {
-    padding: 12px;
+    padding: 13px;
     border: 1px solid blue;
     background-color: white;
     width: 150px;
@@ -267,7 +302,13 @@ header {
     border-radius: 3px;
     font-size: 15px;
     cursor: pointer;
+    transition: transform 0.5s ease;
 }
+
+.cv:hover {
+    transform: scale(1.04);
+}
+
 
 /* -----------Tablet view------------------- */
 
@@ -305,7 +346,7 @@ header {
 }
 
 /* -----------------------footer------------------ */
-footer{
+footer {
     /* border: 1px solid ; */
     display: flex;
     flex-direction: row;
@@ -315,22 +356,27 @@ footer{
     background-color: #fcf9f9;
     margin-top: 60px;
 }
-.footer-name-year i{
+
+.footer-name-year i {
     font-size: 20px;
     color: blue;
 }
-.footer-name-year span{
+
+.footer-name-year span {
     font-size: 20px;
 }
-.footer-name-year h5{
+
+.footer-name-year h5 {
     margin-top: 10px;
     font-size: 12px;
 }
-.footer-social{
+
+.footer-social {
     display: flex;
     gap: 20px;
 
 }
+
 /* -----------------for mobile----------- */
 
 @media (max-width: 768px) {
@@ -353,45 +399,64 @@ footer{
         align-items: center;
         height: 70px;
     }
-    .nav-items{
+
+    .nav-items {
         position: relative;
         list-style: none;
         background-color: white;
-        box-shadow: 3px 0 0  rgba(216, 210, 210, 0.2);
-        padding: 30px;
-        width: 50%;
-        min-height: 70vh;
+        box-shadow: 3px 0 0 rgba(216, 210, 210, 0.2);
+        padding: 35px;
+        width: 70%;
+        min-height: 90vh;
+        height: auto;
         display: none;
         /* margin-bottom: -60px; */
     }
-    .nav-items.active{
+
+    .nav-items.active {
         display: none;
     }
-    .nav-display{
+
+    .nav-display {
         display: block;
     }
-    .nav-items li{
-        font-size: 15px;
-        margin-bottom: 60px;
+
+    .nav-items li {
+        font-size: 18px;
+        margin-bottom: 50px;
         margin-top: 20px;
         color: blue;
         cursor: pointer;
     }
-    .nav-items li i{
+
+    #downloadCvBtn {
+        margin-top: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    #downloadCvBtn:hover {
+        transform: scale(1.09);
+    }
+
+    .nav-items li i {
         padding-right: 30px;
     }
+
     .hamburger {
         font-size: 35px;
         color: blue;
         display: block;
     }
-    .desktop-nav-items{
+
+    .desktop-nav-items {
         display: none;
     }
+
     .hamburger {
         font-size: 35px;
         color: blue;
         display: block;
+        cursor: pointer;
     }
 
     .darkmode-switch {
@@ -476,11 +541,15 @@ footer{
         width: 100%;
         font-size: 18px;
         font-weight: 600;
+        transition: transform 0.4s ease;
+    }
 
+    .projectsBtn:hover {
+        transform: scale(0.95);
     }
 
     .cvBtn {
-        padding: 10px;
+        padding: 15px;
         border: 1px solid blue;
         background-color: white;
         width: 100%;
@@ -489,8 +558,12 @@ footer{
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
+        transition: transform 0.4s ease;
     }
 
+    .cvBtn:hover {
+        transform: scale(0.95);
+    }
 
     /* .what-i-doSec {
         padding: 30px;
