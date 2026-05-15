@@ -203,13 +203,13 @@ header {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 240px;
+    width: 260px;
     height: 60px;
-    padding: 15px 30px;
+    padding: 20px;
     color: blue;
-    gap: 30px;
+    gap: 20px;
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
@@ -247,7 +247,7 @@ header {
 .name-title h6 span {
     color: rgb(56, 54, 54);
     font-weight: 800;
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .name-title h1 {
@@ -260,9 +260,9 @@ header {
 }
 
 .what-i-doSec p {
-    font-size: 15px;
-    font-weight: 600;
-    color: rgb(95, 86, 86);
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
     line-height: 1.7;
     /* margin-top: 10px; */
 
